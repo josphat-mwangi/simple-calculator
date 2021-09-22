@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" value="" id="output-screen">
+            <div id="keyboard">
+                <button class="operator" id="operator" onclick="clear()">C</button>
+                <button class="operator"  id="operator" onclick="backspace()">CE</button>
+                <button class="operator" onclick="display('%')" id="%">%</button>
+                <button class="operator" onclick="display('/')" id="/">&#247;</button>
+                <button class="number" onclick="display('7')" id="7">7</button>
+                <button class="number" onclick="display('8')" id="8">8</button>
+                <button class="number"  onclick="display('9')" id="9">9</button>
+                <button class="operator" onclick="display('*')" id="*">&times;</button>
+                <button class="number" onclick="display('4')" id="4">4</button>
+                <button class="number" onclick="display('5')" id="5">5</button>
+                <button class="number" onclick="display('6')" id="6">6</button>
+                <button class="operator" onclick="display('-')" id="-">-</button>
+                <button class="number" onclick="display('1')" id="1">1</button>
+                <button class="number" onclick="display('2')" id="2">2</button>
+                <button class="number" onclick="display('3')" id="3">3</button>
+                <button class="operator"onclick="display('+')" id="+">+</button>
+                <button class="empty" id="empty"></button>
+                <button class="number" onclick="display('')" id="0">0</button>
+                <button class="empty" id="empty"></button>
+                <button class="operator" onclick="calculate()" id="=">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts.js"></script>
+</body>
+</html>

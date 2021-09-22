@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    background-color: black;
+}
+
+
+.container{
+    margin: 20px auto;
+    width: 1000px;
+    height: 750px;
+    
+  
+    
+}
+
+.calculator{
+    width: 330px;
+    height: 520px;
+    background-color: #ecf0f3;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+    /* box-shadow: inset 5px 5px 12px #ffffff,
+                      5px 5px  12px  rgba(0, 0, 0, 0.16); */
+}
+
+input{
+    height: 80px;
+    width: 300px;
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 30px;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset  5px  5px  12px rgba(0, 0, 0, 0.16);
+    
+    font-size: 50px;
+    text-align: end;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-right: 10px;
+    color: black;
+  
+   
+}
+
+
+#keyboard{
+    height: 400px;
+}
+
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50px;
+    border-width: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.number {
+    background-color: white;
+}
+.operator {
+    background-color: black;
+    color: white;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px;
+}
+
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+.empty{
+    background-color: #ecf0f3;
+}
+button:nth-child(4){
+    font-size: 20px;
+    background-color: #20b2aa;
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: #ffa500;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: #f08080;
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: #9477af;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container{
+        width: 400px;
+        background-color: yellow;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container{
+        width: 200px;
+    }
+    .calculator{
+        display: grid;
+        grid-template-rows: repeat(4, 68px);
+    }
+}
